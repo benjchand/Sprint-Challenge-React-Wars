@@ -26,11 +26,19 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React tries to make it easier to handle data and organizing how people will view it.  It also makes it easier to make a use reusable UI components.  By breaking up code into smaller pieces, like the components of the React-ToDo, it makes it easier to find and then change various elements of what you are looking for.
+
 - [ ] What does it mean to _think_ in react?
+
+I believe that it means to be able to conceptualize the connection between props and this.state and then being able to use that connection in a productive way.
 
 - [ ] Describe state.
 
+State is essentially the data that the code has.  It can then be manipulated in various ways, but it is the center brain from which other elements gain their functionality.
+
 - [ ] Describe props.
+
+Props is basically a "Looking For A Job" sign.  It allows something to say 'Whatever data you put in here, I will work with it.' and then when you put that component to work by calling it somewhere else you connect that prop to a piece of data saying "This is the field you will be working in, and here is the tool you will be working with."
 
 ## Project Set Up
 

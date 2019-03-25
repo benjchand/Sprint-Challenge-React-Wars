@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Character from './components/Character'
 
 class App extends Component {
   constructor() {
@@ -7,6 +8,7 @@ class App extends Component {
     this.state = {
       starwarsChars: []
     };
+
   }
 
   componentDidMount() {
@@ -23,16 +25,24 @@ class App extends Component {
       })
       .then(data => {
         this.setState({ starwarsChars: data.results });
+        console.log(data.results);
+
       })
       .catch(err => {
         throw new Error(err);
       });
+
   };
+
 
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header">React Wars CHARACTER LIST</h1>
+        
+        <Character 
+          dataArrayBeingReferenced = {this.state.starwarsChars}
+        />
       </div>
     );
   }
